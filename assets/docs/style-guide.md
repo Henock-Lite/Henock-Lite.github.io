@@ -5,29 +5,29 @@
 The designs were created to the following widths:
 
 - Mobile: 375px
-- Desktop: 1440px
 
-> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
 
 ## Colors
 
-- Red: hsl(14, 86%, 42%)
-- Green: hsl(159, 69%, 38%)
+- Black 100: #09090b
+- Black  50: #18181b
 
-- Rose 50: hsl(20, 50%, 98%)
-- Rose 100: hsl(13, 31%, 94%)
-- Rose 300: hsl(14, 25%, 72%)
-- Rose 400: hsl(7, 20%, 60%)
-- Rose 500: hsl(12, 20%, 44%)
-- Rose 900: hsl(14, 65%, 9%)
+- gray 100: #d4d4d8
+- gray 50 : #ececef
+- gray 300: #91919a
+- Rose 400: #3f3f46
+
 
 ## Typography
 
+
+- Lexend-VariableFont_wght
+
 ### Body Copy
 
-- Font size (product names): 16px
+- Font size (paragraphe): 16px
 
 ### Font
 
 - Family: [Red Hat Text](https://fonts.google.com/specimen/Red+Hat+Text)
-- Weights: 400, 600, 700
+- Weights: 200 ,400, 600, 700
