@@ -1,1 +1,19 @@
-/*# sourceMappingURL=main.css.map */
+@font-face {
+  font-family: "Lexend";
+  src: url(../fonts/Lexend-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */

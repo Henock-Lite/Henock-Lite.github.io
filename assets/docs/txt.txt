@@ -1,0 +1,31 @@
+
+Home
+
+header presentation
+
+
+
+
+
+ section Let's build something great!
+
+  - Description : "Je suis dispo pour collaborer sur des projets web. Besoin d’un développeur  Front ? Parlons-en !"
+
+  - call to action 
+
+
+ section Currently coding...
+
+
+ - logo </> #code: En ce moment, je travaille sur des projets en JavaScript et typescritp
+
+ -logo  js : (language)
+       - En JavaScript, tout est un objet. Y compris les exceptions.
+ -logo  TypeScript
+       - TypeScript Là où JavaScript atteint son plein potentiel.
+       - la qualité du code prime sur la vitesse à court terme. 
+
+
+
+
+

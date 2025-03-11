@@ -1,3 +1,14 @@
-
-
-
+@use "../helpers/settings";
+@use "../helpers/functions";
+@use "../helpers/mixin";
+@use "../helpers/variable";
+@use "../base/typographie";
+@use "../base/reset";
+@use "./layouts/header";
+@use "./layouts/nav";
+@use "./layouts/buildSection";
+@use "./layouts/ContactSection";
+@use "./pages/home";
+@use "./pages/about";
+@use "./pages/projects";
+@use "./pages/users";
