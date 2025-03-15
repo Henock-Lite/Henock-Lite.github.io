@@ -1,1 +1,10 @@
-$font1:Lexend,sans-serif;
+$couleurs: (
+  primaire: #3498db,
+  secondaire: #2ecc71,
+  danger: #e74c3c,
+);
+.button {
+  background-color: map-get($couleurs, primaire); // Résultat : #3498db
+}
+
+$font1: Lexend, sans-serif;

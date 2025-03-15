@@ -1,9 +1,10 @@
+
+@use"../base/typographie";
+@use"../base/reset";
 @use "../helpers/settings";
 @use "../helpers/functions";
 @use "../helpers/mixin";
 @use "../helpers/variable";
-@use "../base/typographie";
-@use "../base/reset";
 @use "./layouts/header";
 @use "./layouts/nav";
 @use "./layouts/buildSection";
