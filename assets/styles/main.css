@@ -45,6 +45,17 @@ body {
   font-weight: 300;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(176, 87, 117)), color-stop(rgb(211, 143, 15)), color-stop(#2196f3), to(#7522df));
+  background: linear-gradient(to right, rgb(176, 87, 117), rgb(211, 143, 15), #2196f3, #7522df);
+}
+
 p {
   font-size: 1rem;
   line-height: 1.5;

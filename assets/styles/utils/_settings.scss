@@ -13,6 +13,22 @@ body {
   font-weight: 300;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgb(176, 87, 117),
+    rgb(211, 143, 15),
+    #2196f3,
+    #7522df
+  );
+}
+
 p {
   font-size: v.$font-size-base;
   line-height: v.$line-height-base;
