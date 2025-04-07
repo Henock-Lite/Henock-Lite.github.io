@@ -11,6 +11,7 @@ body {
   background: map-get(v.$couleurs, primaire);
   color: #ececef;
   font-weight: 300;
+  overflow-x: visible;
 }
 
 body::before {
@@ -19,6 +20,7 @@ body::before {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1000;
   height: 1px;
   background: linear-gradient(
     to right,

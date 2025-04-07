@@ -43,6 +43,7 @@ body {
   background: #09090b;
   color: #ececef;
   font-weight: 300;
+  overflow-x: visible;
 }
 
 body::before {
@@ -51,6 +52,7 @@ body::before {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1000;
   height: 1px;
   background: -webkit-gradient(linear, left top, right top, from(rgb(176, 87, 117)), color-stop(rgb(211, 143, 15)), color-stop(#2196f3), to(#7522df));
   background: linear-gradient(to right, rgb(176, 87, 117), rgb(211, 143, 15), #2196f3, #7522df);
