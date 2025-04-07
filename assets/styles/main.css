@@ -199,10 +199,11 @@ nav ul li {
   position: absolute;
   width: 97%;
   height: 2px;
+  border-radius: 5px;
   background: #27272a;
   left: 10px;
-  -webkit-transform: translateY(59px);
-          transform: translateY(59px);
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
 }
 .buildSection .icon-place .last-project:first-child:hover .icon-cards,
 .buildSection .last-project:nth-child(2):hover .icon-cards {
@@ -216,7 +217,7 @@ nav ul li {
   height: 70%;
   border-radius: 14px;
   background: #18181b;
-  padding: 0.625rem;
+  padding: 0.5rem;
   width: 100%;
 }
 .buildSection .icon-place .last-project {
@@ -248,13 +249,16 @@ nav ul li {
   background: #3f3f46;
 }
 .buildSection .icon-place .last-project .description .num {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   text-transform: capitalize;
 }
 .buildSection .icon-place .last-project .description p {
   font-size: 0.8125rem;
 }
 
+.contactmeSection {
+  padding-bottom: 75px;
+}
 .contactmeSection .contact-title {
   margin: 45px 0 14px;
 }
@@ -267,28 +271,66 @@ nav ul li {
   text-transform: capitalize;
 }
 .contactmeSection .carte-contact {
+  border: solid 1px #27272a;
+  height: 70%;
+  border-radius: 14px;
   background: #18181b;
-  padding: 0.9375rem;
+  padding: 0.625rem;
+  width: 100%;
 }
-.contactmeSection .carte-contact .mail {
+.contactmeSection .parent-div {
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  cursor: pointer;
+}
+.contactmeSection .parent-div .A {
+  border-bottom: solid 1px #27272a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 7px;
+  gap: 15px;
+  padding: 0.5rem;
 }
-.contactmeSection .carte-contact .mail svg {
-  height: 1.25rem;
+.contactmeSection .parent-div .A .svg-parent svg {
+  height: 100%;
+  text-align: center;
 }
-.contactmeSection .carte-contact .mail p {
+.contactmeSection .parent-div .A .infos-contact {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.contactmeSection .parent-div .A .infos-contact p {
   text-transform: capitalize;
   font-size: 0.8125rem;
 }
-.contactmeSection .carte-contact .mail div {
+.contactmeSection .parent-div .A .mail-infos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+}
+.contactmeSection .parent-div .A .mail-infos p {
+  text-transform: capitalize;
+  font-size: 0.8125rem;
+}
+.contactmeSection .parent-div .A .mail-infos div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contactmeSection .parent-div .A .mail-infos div span {
+  font-size: 0.8125rem;
+}
+.contactmeSection .parent-div .bordur {
+  border: none;
 }/*# sourceMappingURL=main.css.map */

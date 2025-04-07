@@ -2,8 +2,8 @@
 @use "../../styles/utils/functions" as fn;
 
 .contactmeSection {
-  //   background: #18181b;
   //   padding: fn.convertir-rem(20);
+  padding-bottom: 75px;
   .contact-title {
     margin: 45px 0 14px;
     h3 {
@@ -16,23 +16,61 @@
     }
   }
   .carte-contact {
+    border: solid 1px #27272a;
+    height: 70%;
+    border-radius: 14px;
     background: #18181b;
-      padding: fn.convertir-rem(15);
-    .mail {
+    padding: fn.convertir-rem(10);
+    width: 100%;
+  }
+
+  .parent-div {
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    cursor: pointer;
+    .A {
+      border-bottom: solid 1px #27272a;
       display: flex;
-      gap: 7px;
-      svg {
-        height: fn.convertir-rem(20);
+      gap: 15px;
+      padding: fn.convertir-rem(8);
+      .svg-parent {
+        svg {
+          height: 100%;
+          text-align: center;
+        }
       }
-      p {
-        text-transform: capitalize;
-        font-size: fn.convertir-rem(13);
+      .infos-contact {
+        align-self: center;
+        p {
+          text-transform: capitalize;
+          font-size: fn.convertir-rem(13);
+        }
       }
-      div {
+
+      .mail-infos {
         display: flex;
+        align-items: center;
+        gap: 15px;
         justify-content: space-between;
         width: 100%;
+        p {
+          text-transform: capitalize;
+          font-size: fn.convertir-rem(13);
+        }
+
+        div{
+          display: flex;
+          align-items: center;
+          span{
+            font-size: fn.convertir-rem(13);
+
+          }
+        }
       }
+    }
+
+    .bordur {
+      border: none;
     }
   }
 }
