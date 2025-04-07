@@ -1,0 +1,14 @@
+$couleurs: (
+  primaire: #09090b,
+  secondaire: #ececef,
+  blanc-casser: #a1a1a4,
+  sombre-gris:#3f3f46,
+);
+
+// .button {
+//   background-color: map-get($couleurs, primaire); // Résultat : #3498db
+// }
+
+$font-size-base: 1rem;
+$line-height-base: 1.5;
+$small-size: 0.875rem;

@@ -1,5 +1,9 @@
 @font-face {
   font-family: "Lexend";
-  src: url(../fonts/Lexend-VariableFont_wght.ttf);
+  src: url("../fonts/Lexend-VariableFont_wght.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Allura";
+  src: url("../fonts/Allura-Regular.ttf") format("truetype");
+}

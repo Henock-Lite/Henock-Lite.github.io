@@ -1,3 +1,53 @@
-nav{
-   
+@use "../../styles/utils/variable" as v;
+@use "../../styles/utils/functions" as fn;
+@use "../../base/typographie";
+@use "../../styles/utils/mixin" as m;
+
+nav {
+  @include m.flexcenterspace;
+  p {
+    font-family: "Allura";
+    font-size: 1.5em;
+    text-transform: capitalize;
+    letter-spacing: 0.1em;
+    transform: rotate(-8deg);
+    font-weight: 600;
+    span {
+      &::after {
+        content: "";
+        display: block;
+        width: 32%;
+        transform: translateY(-8px);
+        height: 2px;
+        background: linear-gradient(135deg, #7522df, #2196f3);
+      }
+    }
+  }
+  ul {
+    @include m.flexcenterspace;
+    align-items: center;
+    width: 30%;
+    border: solid 1px #333334;
+    background: #18181b;
+    border-radius: 1500px;
+    padding: fn.convertir-rem(2) fn.convertir-rem(0);
+    padding-right: fn.convertir-rem(12);
+
+    li {
+      cursor: pointer;
+      color: #a1a1a4;
+      font-size: 0.9em;
+      text-transform: capitalize;
+      user-select: none;
+    }
+  }
+}
+
+.active {
+  background: #3f3f46;
+  padding: fn.convertir-rem(8) fn.convertir-rem(12);
+  border-radius: 1000px;
+  width: 35%;
+  text-align: center;
+  color: #ececef;
 }

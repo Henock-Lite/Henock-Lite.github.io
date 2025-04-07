@@ -1,0 +1,40 @@
+@use "../../base/typographie";
+@use "../../styles/utils/variable" as v;
+
+body {
+  max-width: 670px;
+  margin: 0 auto;
+  padding: 50px 0;
+  height: 100%;
+  line-height: v.$line-height-base;
+  font-family: "Lexend", sans-serif;
+  background: map-get(v.$couleurs, primaire);
+  color: #ececef;
+  font-weight: 300;
+}
+
+p {
+  font-size: v.$font-size-base;
+  line-height: v.$line-height-base;
+  letter-spacing: 0.5px;
+  &::selection {
+    background: rgb(176, 87, 117);
+  }
+}
+h1,
+h2,
+h3,
+h4 {
+  user-select: none;
+}
+h1 {
+  font-size: 2rem;
+  margin: 25px 0;
+  text-transform: capitalize;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}

@@ -1,0 +1,31 @@
+// conversion px en rem
+@function convertir-rem($pixels) {
+  @return #{($pixels / 16)}rem;
+}
+
+@function modifier-couleur($couleur, $percent) {
+  @if $percent > 0 {
+    @return lighten($couleur, $percent);
+  } @else {
+    @return darken($couleur, abs($percent));
+  }
+}
+
+@function largeur-respons($min, $max) {
+  @return clamp($min, 2vw, $max);
+}
+
+@function espace($facteur) {
+  $base: 8px; // Taille de base
+  @return $facteur * $base;
+}
+
+@function espacement($niveau) {
+  $espacements: (
+    1: 4px,
+    2: 8px,
+    3: 16px,
+    4: 32px,
+  );
+  @return map-get($espacements, $niveau);
+}

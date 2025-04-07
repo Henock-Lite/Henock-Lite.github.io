@@ -6,11 +6,16 @@
 }
 html {
   scroll-behavior: smooth;
+  font-size: 100%;
+}
+html,
+body {
+  height: 100%;
 }
 a {
   text-decoration: none;
   list-style: none;
 }
-li{
+li {
   list-style: none;
 }

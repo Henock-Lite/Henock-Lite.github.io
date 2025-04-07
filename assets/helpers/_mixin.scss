@@ -1,9 +1,0 @@
-
-@mixin flexcenter{
-    display: flex;
-    justify-content: center;
- }
- @mixin gridcolumn{
-    display: grid;
-    grid-template-columns: repeat(2,50%);
- }
