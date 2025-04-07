@@ -255,6 +255,9 @@ nav ul li {
 .buildSection .icon-place .last-project .description p {
   font-size: 0.8125rem;
 }
+.buildSection .icon-place .last-project .description .discription-p {
+  color: #a1a1a4;
+}
 
 .contactmeSection {
   padding-bottom: 75px;
