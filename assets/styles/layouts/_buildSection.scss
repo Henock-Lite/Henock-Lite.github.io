@@ -20,7 +20,7 @@
 
   .icon-place .last-project:first-child,
   .icon-place .last-project:nth-child(2) {
-    padding: fn.convertir-rem(20);
+    padding: fn.convertir-rem(19);
 
     &:hover {
       background: #212124;
@@ -37,14 +37,13 @@
       border-radius: 5px;
       background: #27272a;
       left: 10px;
-      transform: translateY(60px);
+      transform: translateY(59px);
     }
   }
 
   .icon-place .last-project:first-child:hover .icon-cards,
   .last-project:nth-child(2):hover .icon-cards {
     background: linear-gradient(135deg, #7522df, #2196f3);
-
     transition: ease 0.1s background;
   }
 
@@ -64,7 +63,7 @@
       svg {
         height: fn.convertir-rem(20);
       }
-      padding: fn.convertir-rem(15);
+      padding: fn.convertir-rem(10);
 
       display: flex;
       gap: 15px;

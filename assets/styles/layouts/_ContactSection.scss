@@ -27,9 +27,14 @@
   .parent-div {
     display: grid;
     grid-template-rows: 25% 25% 25% 25%;
+
     cursor: pointer;
     .A {
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;
+      border-top: 1px solid transparent;
       border-bottom: solid 1px #27272a;
+
       display: flex;
       gap: 15px;
       padding: fn.convertir-rem(8);
@@ -60,22 +65,26 @@
           user-select: none;
         }
 
-        div{
+        div {
           display: flex;
           align-items: center;
-          span{
+          span {
             font-size: fn.convertir-rem(13);
             &::selection {
               background: rgb(176, 87, 117);
             }
-
           }
         }
+      }
+      &:hover {
+        background: #212124;
+        border: solid 0.5px #3d3d41;
+        border-radius: 5px;
       }
     }
 
     .bordur {
-      border: none;
+      border: 1px solid transparent;
     }
   }
 }

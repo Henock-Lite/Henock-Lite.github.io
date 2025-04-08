@@ -86,10 +86,14 @@ li {
 @font-face {
   font-family: "Lexend";
   src: url("../fonts/Lexend-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
 }
 @font-face {
   font-family: "Allura";
   src: url("../fonts/Allura-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
 }
 body {
   max-width: 670px;
@@ -252,7 +256,7 @@ nav ul li {
 }
 .buildSection .icon-place .last-project:first-child,
 .buildSection .icon-place .last-project:nth-child(2) {
-  padding: 1.25rem;
+  padding: 1.1875rem;
 }
 .buildSection .icon-place .last-project:first-child:hover,
 .buildSection .icon-place .last-project:nth-child(2):hover {
@@ -268,8 +272,8 @@ nav ul li {
   border-radius: 5px;
   background: #27272a;
   left: 10px;
-  -webkit-transform: translateY(60px);
-          transform: translateY(60px);
+  -webkit-transform: translateY(59px);
+          transform: translateY(59px);
 }
 .buildSection .icon-place .last-project:first-child:hover .icon-cards,
 .buildSection .last-project:nth-child(2):hover .icon-cards {
@@ -290,7 +294,7 @@ nav ul li {
   height: 100%;
   border: solid 0.5px transparent;
   cursor: pointer;
-  padding: 0.9375rem;
+  padding: 0.625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -353,6 +357,9 @@ nav ul li {
   cursor: pointer;
 }
 .contactmeSection .parent-div .A {
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 1px solid transparent;
   border-bottom: solid 1px #27272a;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -414,6 +421,11 @@ nav ul li {
 .contactmeSection .parent-div .A .mail-infos div span::selection {
   background: rgb(176, 87, 117);
 }
+.contactmeSection .parent-div .A:hover {
+  background: #212124;
+  border: solid 0.5px #3d3d41;
+  border-radius: 5px;
+}
 .contactmeSection .parent-div .bordur {
-  border: none;
+  border: 1px solid transparent;
 }/*# sourceMappingURL=main.css.map */

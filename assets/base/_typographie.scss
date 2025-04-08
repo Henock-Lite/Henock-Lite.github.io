@@ -1,9 +1,13 @@
 @font-face {
   font-family: "Lexend";
   src: url("../fonts/Lexend-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
 }
 
 @font-face {
   font-family: "Allura";
   src: url("../fonts/Allura-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
 }
