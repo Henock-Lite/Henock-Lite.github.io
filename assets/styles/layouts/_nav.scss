@@ -5,6 +5,7 @@
 
 nav {
   @include m.flexcenterspace;
+  user-select: none;
   p {
     font-family: "Allura";
     font-size: 1.5em;

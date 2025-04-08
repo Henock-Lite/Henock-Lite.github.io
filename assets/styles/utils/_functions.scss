@@ -1,6 +1,6 @@
 // conversion px en rem
 @function convertir-rem($pixels) {
-  @return #{($pixels / 16)}rem;
+  @return #{calc($pixels / 16)}rem;
 }
 
 @function modifier-couleur($couleur, $percent) {

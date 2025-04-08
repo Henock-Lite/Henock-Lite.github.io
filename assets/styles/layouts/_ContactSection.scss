@@ -44,6 +44,7 @@
         p {
           text-transform: capitalize;
           font-size: fn.convertir-rem(13);
+          user-select: none;
         }
       }
 
@@ -56,6 +57,7 @@
         p {
           text-transform: capitalize;
           font-size: fn.convertir-rem(13);
+          user-select: none;
         }
 
         div{
@@ -63,6 +65,9 @@
           align-items: center;
           span{
             font-size: fn.convertir-rem(13);
+            &::selection {
+              background: rgb(176, 87, 117);
+            }
 
           }
         }

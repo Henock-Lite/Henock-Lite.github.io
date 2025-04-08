@@ -1,3 +1,61 @@
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 9999;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.spinner {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(35%, #7522df), to(#2196f3));
+  background-image: linear-gradient(#7522df 35%, #2196f3);
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spinning82341 1.7s linear infinite;
+          animation: spinning82341 1.7s linear infinite;
+  text-align: center;
+  border-radius: 50px;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  -webkit-box-shadow: 0px -5px 20px 0px #7522df, 0px 5px 20px 0px #2196f3;
+          box-shadow: 0px -5px 20px 0px #7522df, 0px 5px 20px 0px #2196f3;
+}
+
+.spinner1 {
+  background-color: rgb(36, 36, 36);
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+@-webkit-keyframes spinning82341 {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinning82341 {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -73,7 +131,7 @@ p::selection {
 h1,
 h2,
 h3,
-h4 {
+h4, svg {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -114,6 +172,10 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 nav p {
   font-family: "Allura";
@@ -172,6 +234,10 @@ nav ul li {
 
 .buildSection {
   border-top: solid 2px #27272a;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .buildSection .title-project {
   margin: 45px 0 14px;
@@ -305,6 +371,10 @@ nav ul li {
 .contactmeSection .parent-div .A .infos-contact p {
   text-transform: capitalize;
   font-size: 0.8125rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .contactmeSection .parent-div .A .mail-infos {
   display: -webkit-box;
@@ -322,6 +392,10 @@ nav ul li {
 .contactmeSection .parent-div .A .mail-infos p {
   text-transform: capitalize;
   font-size: 0.8125rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .contactmeSection .parent-div .A .mail-infos div {
   display: -webkit-box;
@@ -333,6 +407,12 @@ nav ul li {
 }
 .contactmeSection .parent-div .A .mail-infos div span {
   font-size: 0.8125rem;
+}
+.contactmeSection .parent-div .A .mail-infos div span::-moz-selection {
+  background: rgb(176, 87, 117);
+}
+.contactmeSection .parent-div .A .mail-infos div span::selection {
+  background: rgb(176, 87, 117);
 }
 .contactmeSection .parent-div .bordur {
   border: none;
