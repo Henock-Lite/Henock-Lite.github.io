@@ -93,7 +93,7 @@ li {
   src: url("../fonts/Allura-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  font-display: fallback;
+  font-display: block;
 }
 body {
   max-width: 670px;
@@ -135,7 +135,8 @@ p::selection {
 h1,
 h2,
 h3,
-h4, svg {
+h4,
+svg {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -154,6 +155,10 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
+}
+
+a {
+  color: #ececef;
 }
 
 header {

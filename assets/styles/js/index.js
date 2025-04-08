@@ -1,11 +1,11 @@
 window.addEventListener("load", () => {
-    const loader = document.getElementById("loader");
-    const content = document.getElementById("main-content");
+  const loader = document.getElementById("loader");
+  const content = document.getElementById("main-content");
+  setTimeout(() => {
+    loader.style.opacity = "0";
     setTimeout(() => {
-      loader.style.opacity = "0";
-      setTimeout(() => {
-        loader.style.display = "none";
-        content.style.display = "block";
-      }, 500); 
-    }, 3000); 
-  });
+      loader.style.display = "none";
+      content.style.display = "block";
+    }, 500);
+  }, 3000);
+});

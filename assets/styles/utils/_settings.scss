@@ -42,7 +42,8 @@ p {
 h1,
 h2,
 h3,
-h4 ,svg{
+h4,
+svg {
   user-select: none;
 }
 h1 {
@@ -55,4 +56,8 @@ h2 {
 }
 h3 {
   font-size: 1.25rem;
+}
+
+a {
+  color: #ececef;
 }
