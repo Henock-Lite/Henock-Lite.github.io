@@ -4,6 +4,7 @@
 @use "../../styles/utils/mixin" as m;
 
 nav {
+  width: 100%;
   @include m.flexcenterspace;
   user-select: none;
   p {
@@ -18,37 +19,42 @@ nav {
         content: "";
         display: block;
         width: 32%;
-        transform: translateY(-8px);
-        height: 2px;
+        transform: translateY(fn.convertir-rem(-8));
+        height: fn.convertir-rem(2);
         background: linear-gradient(135deg, #7522df, #2196f3);
       }
     }
   }
   ul {
-    @include m.flexcenterspace;
+    display: flex;
     align-items: center;
-    width: 30%;
+    width: 38%;
+    height: fn.convertir-rem(40);
     border: solid 1px #333334;
     background: #18181b;
-    border-radius: 1500px;
-    padding: fn.convertir-rem(2) fn.convertir-rem(0);
-    padding-right: fn.convertir-rem(12);
+    border-radius: fn.convertir-rem(1500);
 
     li {
       cursor: pointer;
       color: #a1a1a4;
       font-size: 0.9em;
+      margin-left: 2px;
       text-transform: capitalize;
       user-select: none;
+      flex: 1;
+      text-align: center;
     }
   }
 }
 
 .active {
   background: #3f3f46;
-  padding: fn.convertir-rem(8) fn.convertir-rem(12);
-  border-radius: 1000px;
-  width: 35%;
+  margin-left: fn.convertir-rem(2);
+  border-radius: fn.convertir-rem(1000);
+  height: fn.convertir-rem(35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: #ececef;
 }

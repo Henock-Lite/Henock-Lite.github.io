@@ -1,10 +1,11 @@
 @use "../../base/typographie";
 @use "../../styles/utils/variable" as v;
+@use "../../styles/utils/functions" as fn;
 
 body {
-  max-width: 670px;
+  max-width: 650px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: fn.convertir-rem(50) 0;
   height: 100%;
   line-height: v.$line-height-base;
   font-family: "Lexend", sans-serif;
@@ -21,7 +22,7 @@ body::before {
   left: 0;
   width: 100%;
   z-index: 1000;
-  height: 1px;
+  height: fn.convertir-rem(1);
   background: linear-gradient(
     to right,
     rgb(176, 87, 117),
@@ -34,21 +35,28 @@ body::before {
 p {
   font-size: v.$font-size-base;
   line-height: v.$line-height-base;
-  letter-spacing: 0.5px;
+  letter-spacing: fn.convertir-rem(0.5);
   &::selection {
     background: rgb(176, 87, 117);
   }
 }
+
+h2,
+h3,
+h4 {
+  line-height: fn.convertir-rem(27);
+  text-transform: capitalize;
+  color: rgb(113, 113, 122);
+}
 h1,
 h2,
 h3,
-h4,
-svg {
+h4 svg {
   user-select: none;
 }
 h1 {
   font-size: 2rem;
-  margin: 25px 0;
+  margin: fn.convertir-rem(25) 0;
   text-transform: capitalize;
 }
 h2 {
@@ -60,4 +68,21 @@ h3 {
 
 a {
   color: #ececef;
+}
+
+.content {
+  opacity: 0;
+  transform: translateY(fn.convertir-rem(20));
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: relative;
+}
+
+.content.activePage {
+  opacity: 1;
+  transform: translateY(0);
+  height: auto;
+  pointer-events: auto;
 }

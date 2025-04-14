@@ -64,6 +64,11 @@
   list-style: none;
 }
 
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 100%;
@@ -93,12 +98,12 @@ li {
   src: url("../fonts/Allura-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 body {
-  max-width: 670px;
+  max-width: 650px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 3.125rem 0;
   height: 100%;
   line-height: 1.5;
   font-family: "Lexend", sans-serif;
@@ -115,7 +120,7 @@ body::before {
   left: 0;
   width: 100%;
   z-index: 1000;
-  height: 1px;
+  height: 0.0625rem;
   background: -webkit-gradient(linear, left top, right top, from(rgb(176, 87, 117)), color-stop(rgb(211, 143, 15)), color-stop(#2196f3), to(#7522df));
   background: linear-gradient(to right, rgb(176, 87, 117), rgb(211, 143, 15), #2196f3, #7522df);
 }
@@ -123,7 +128,7 @@ body::before {
 p {
   font-size: 1rem;
   line-height: 1.5;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.03125rem;
 }
 p::-moz-selection {
   background: rgb(176, 87, 117);
@@ -132,11 +137,18 @@ p::selection {
   background: rgb(176, 87, 117);
 }
 
+h2,
+h3,
+h4 {
+  line-height: 1.6875rem;
+  text-transform: capitalize;
+  color: rgb(113, 113, 122);
+}
+
 h1,
 h2,
 h3,
-h4,
-svg {
+h4 svg {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -145,7 +157,7 @@ svg {
 
 h1 {
   font-size: 2rem;
-  margin: 25px 0;
+  margin: 1.5625rem 0;
   text-transform: capitalize;
 }
 
@@ -159,6 +171,28 @@ h3 {
 
 a {
   color: #ececef;
+}
+
+.content {
+  opacity: 0;
+  -webkit-transform: translateY(1.25rem);
+          transform: translateY(1.25rem);
+  -webkit-transition: opacity 0.4s ease, -webkit-transform 0.4s ease;
+  transition: opacity 0.4s ease, -webkit-transform 0.4s ease;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition: opacity 0.4s ease, transform 0.4s ease, -webkit-transform 0.4s ease;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: relative;
+}
+
+.content.activePage {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  height: auto;
+  pointer-events: auto;
 }
 
 header {
@@ -175,6 +209,7 @@ header div p {
 }
 
 nav {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,44 +234,54 @@ nav p span::after {
   content: "";
   display: block;
   width: 32%;
-  -webkit-transform: translateY(-8px);
-          transform: translateY(-8px);
-  height: 2px;
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+  height: 0.125rem;
   background: linear-gradient(135deg, #7522df, #2196f3);
 }
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30%;
+  width: 38%;
+  height: 2.5rem;
   border: solid 1px #333334;
   background: #18181b;
-  border-radius: 1500px;
-  padding: 0.125rem 0rem;
-  padding-right: 0.75rem;
+  border-radius: 93.75rem;
 }
 nav ul li {
   cursor: pointer;
   color: #a1a1a4;
   font-size: 0.9em;
+  margin-left: 2px;
   text-transform: capitalize;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
 }
 
 .active {
   background: #3f3f46;
-  padding: 0.5rem 0.75rem;
-  border-radius: 1000px;
-  width: 35%;
+  margin-left: 0.125rem;
+  border-radius: 62.5rem;
+  height: 2.1875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   color: #ececef;
 }
@@ -249,15 +294,11 @@ nav ul li {
           user-select: none;
 }
 .buildSection .title-project {
-  margin: 45px 0 14px;
+  margin: 2.8125rem 0 0.875rem;
 }
 .buildSection .title-project h2 {
-  font-size: 15px;
-  line-height: 27px;
-  text-transform: capitalize;
-  color: rgb(113, 113, 122);
+  font-size: 0.9375rem;
   font-weight: 300;
-  text-transform: capitalize;
 }
 .buildSection .icon-place .last-project:first-child,
 .buildSection .icon-place .last-project:nth-child(2) {
@@ -266,19 +307,19 @@ nav ul li {
 .buildSection .icon-place .last-project:first-child:hover,
 .buildSection .icon-place .last-project:nth-child(2):hover {
   background: #212124;
-  border: solid 0.5px #3d3d41;
-  border-radius: 5px;
+  border: solid 0.03125rem #3d3d41;
+  border-radius: 0.3125rem;
 }
 .buildSection .icon-place .last-project:first-child::after {
   content: "";
   position: absolute;
   width: 97%;
-  height: 2px;
-  border-radius: 5px;
+  height: 0.125rem;
+  border-radius: 0.3125rem;
   background: #27272a;
-  left: 10px;
-  -webkit-transform: translateY(59px);
-          transform: translateY(59px);
+  left: 0.625rem;
+  -webkit-transform: translateY(3.6875rem);
+          transform: translateY(3.6875rem);
 }
 .buildSection .icon-place .last-project:first-child:hover .icon-cards,
 .buildSection .last-project:nth-child(2):hover .icon-cards {
@@ -290,7 +331,7 @@ nav ul li {
   position: relative;
   border: solid 1px #27272a;
   height: 70%;
-  border-radius: 14px;
+  border-radius: 0.875rem;
   background: #18181b;
   padding: 0.5rem;
   width: 100%;
@@ -303,7 +344,7 @@ nav ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 15px;
+  gap: 0.9375rem;
 }
 .buildSection .icon-place .last-project svg {
   height: 1.25rem;
@@ -318,9 +359,9 @@ nav ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 35px;
+  height: 2.1875rem;
   width: 8%;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background: #3f3f46;
 }
 .buildSection .icon-place .last-project .description .num {
@@ -335,23 +376,19 @@ nav ul li {
 }
 
 .contactmeSection {
-  padding-bottom: 75px;
+  padding-bottom: 4.6875rem;
 }
 .contactmeSection .contact-title {
-  margin: 45px 0 14px;
+  margin: 2.8125rem 0 0.875rem;
 }
 .contactmeSection .contact-title h3 {
-  font-size: 15px;
-  line-height: 27px;
-  text-transform: capitalize;
-  color: rgb(113, 113, 122);
+  font-size: 0.9375rem;
   font-weight: 300;
-  text-transform: capitalize;
 }
 .contactmeSection .carte-contact {
   border: solid 1px #27272a;
   height: 70%;
-  border-radius: 14px;
+  border-radius: 0.875rem;
   background: #18181b;
   padding: 0.625rem;
   width: 100%;
@@ -369,7 +406,7 @@ nav ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 15px;
+  gap: 0.9375rem;
   padding: 0.5rem;
 }
 .contactmeSection .parent-div .A .svg-parent svg {
@@ -395,7 +432,7 @@ nav ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 15px;
+  gap: 0.9375rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -428,9 +465,38 @@ nav ul li {
 }
 .contactmeSection .parent-div .A:hover {
   background: #212124;
-  border: solid 0.5px #3d3d41;
-  border-radius: 5px;
+  border: solid 0.03125rem #3d3d41;
+  border-radius: 0.3125rem;
 }
 .contactmeSection .parent-div .bordur {
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
+}
+
+.about .areas-grid {
+  margin: 4.6875rem 0;
+  width: 100%;
+  height: 28.125rem;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: repeat(2, 50%);
+  gap: 0.9375rem;
+  grid-template-areas: "A B" "A D";
+}
+.about .areas-grid div {
+  height: 100%;
+  width: 100%;
+}
+.about .areas-grid img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+  height: 100%;
+  width: 100%;
+}
+.about .areas-grid .A {
+  grid-area: A;
+}
+.about .about-content div p {
+  margin: 30px 0;
+  text-align: left;
 }/*# sourceMappingURL=main.css.map */

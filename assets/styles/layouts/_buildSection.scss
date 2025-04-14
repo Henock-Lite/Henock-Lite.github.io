@@ -7,14 +7,10 @@
   user-select: none;
 
   .title-project {
-    margin: 45px 0 14px;
+    margin: fn.convertir-rem(45) 0 fn.convertir-rem(14);
     h2 {
-      font-size: 15px;
-      line-height: 27px;
-      text-transform: capitalize;
-      color: rgb(113, 113, 122);
+      font-size: fn.convertir-rem(15);
       font-weight: 300;
-      text-transform: capitalize;
     }
   }
 
@@ -24,8 +20,8 @@
 
     &:hover {
       background: #212124;
-      border: solid 0.5px #3d3d41;
-      border-radius: 5px;
+      border: solid fn.convertir-rem(0.5) #3d3d41;
+      border-radius: fn.convertir-rem(5);
     }
   }
   .icon-place .last-project:first-child {
@@ -33,11 +29,11 @@
       content: "";
       position: absolute;
       width: 97%;
-      height: 2px;
-      border-radius: 5px;
+      height: fn.convertir-rem(2);
+      border-radius: fn.convertir-rem(5);
       background: #27272a;
-      left: 10px;
-      transform: translateY(59px);
+      left: fn.convertir-rem(10);
+      transform: translateY(fn.convertir-rem(59));
     }
   }
 
@@ -51,7 +47,7 @@
     position: relative;
     border: solid 1px #27272a;
     height: 70%;
-    border-radius: 14px;
+    border-radius: fn.convertir-rem(14);
     background: #18181b;
     padding: fn.convertir-rem(8);
     width: 100%;
@@ -66,12 +62,12 @@
       padding: fn.convertir-rem(10);
 
       display: flex;
-      gap: 15px;
+      gap: fn.convertir-rem(15);
       .icon-cards {
         @include m.flexcenter;
-        height: 35px;
+        height: fn.convertir-rem(35);
         width: 8%;
-        border-radius: 8px;
+        border-radius: fn.convertir-rem(8);
         background: map-get(v.$couleurs, sombre-gris);
       }
 
