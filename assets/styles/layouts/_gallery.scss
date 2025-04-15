@@ -1,0 +1,29 @@
+@use "../../styles/utils/functions" as fn;
+.gallery {
+  .areas-grid {
+    width: 100%;
+    height: fn.convertir-rem(400);
+    display: grid;
+    grid-template-columns: 65% 1fr;
+    grid-template-rows: repeat(2, 50%);
+
+    gap: fn.convertir-rem(15);
+    grid-template-areas:
+      "A B"
+      "A C";
+
+    div {
+      height: 100%;
+      width: 100%;
+    }
+    img {
+      object-fit: cover;
+      border-radius: fn.convertir-rem(10);
+      height: 100%;
+      width: 100%;
+    }
+    .A {
+      grid-area: A;
+    }
+  }
+}

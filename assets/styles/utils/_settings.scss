@@ -25,10 +25,10 @@ body::before {
   height: fn.convertir-rem(1);
   background: linear-gradient(
     to right,
-    rgb(176, 87, 117),
     rgb(211, 143, 15),
-    #2196f3,
-    #7522df
+    rgb(176, 87, 117),
+    #7522df,
+    #2196f3
   );
 }
 
@@ -69,6 +69,19 @@ h3 {
 a {
   color: #ececef;
 }
+
+header,
+.about,
+.user {
+  margin: fn.convertir-rem(75) 0;
+}
+
+.about{
+  svg{
+    width: 50px;
+  }
+}
+
 
 .content {
   opacity: 0;

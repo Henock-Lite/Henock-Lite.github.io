@@ -1,0 +1,35 @@
+@use "../../styles/utils/functions" as fn;
+
+.C-skills {
+
+  .skills-title {
+    h2 {
+      font-size: fn.convertir-rem(15);
+      font-weight: 300;
+    }
+  }
+
+  svg{
+    width: 70px;
+  }
+
+  .skills-flex {
+    width: 100%;
+
+    height:280px;
+  
+    background: #18181b;
+    border-radius: fn.convertir-rem(14);
+    justify-items: center;
+
+    .parent-svg{
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+
+    
+      
+    }
+  
+  }
+}

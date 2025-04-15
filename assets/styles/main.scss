@@ -8,4 +8,7 @@
 @use "./layouts/buildSection";
 @use "./layouts/ContactSection";
 @use "./pages/about";
+@use "./layouts/gallery";
+@use "./layouts/about-me";
+@use"./layouts/card-skills";
 @use "./pages/users";
