@@ -3,7 +3,8 @@
 @use "../../styles/utils/functions" as fn;
 
 body {
-  max-width: 650px;
+  max-width: min(650px, calc(100% - 2rem));
+  margin-inline: auto;
   margin: 0 auto;
   padding: fn.convertir-rem(50) 0;
   height: 100%;
@@ -75,13 +76,11 @@ header,
 .user {
   margin: fn.convertir-rem(75) 0;
 }
-
-.about{
-  svg{
+.about {
+  svg {
     width: 50px;
   }
 }
-
 
 .content {
   opacity: 0;

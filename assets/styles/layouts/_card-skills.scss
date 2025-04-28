@@ -8,11 +8,11 @@
       font-weight: 300;
     }
   }
-
   .skills-flex {
     width: 100%;
-    height: 200px;
+    height:fn.convertir-rem(200);
     background: #18181b;
+    border-radius: fn.convertir-rem(14);
 
     .parent-svg {
       display: grid;
@@ -22,23 +22,24 @@
       width: 100%;
 
       div:nth-child(2) {
-        border-right: 1px greenyellow solid;
-        border-left: 1px yellowgreen solid;
+        border-right:  solid fn.convertir-rem(0.5) #27272a;
+        border-left:  solid fn.convertir-rem(0.5) #27272a;
       }
       div:nth-child(5) {
-        border-right: 1px greenyellow solid;
-        border-left: 1px yellowgreen solid;
+        border-right:  solid fn.convertir-rem(0.5) #27272a;
+        border-left:  solid fn.convertir-rem(0.5) #27272a;
       }
       div:nth-child(4),
       div:nth-child(5),
       div:nth-child(6) {
-        border-bottom: solid 1px red transparent;
+        border-top: solid fn.convertir-rem(0.5) #27272a;
       }
     }
 
     div {
       width: 100%;
       height: 100%;
+      padding: fn.convertir-rem(25);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -47,8 +48,8 @@
       border-left: none;
 
       svg {
-        height: 40px;
-        width: 40px;
+        height: fn.convertir-rem(40);
+        width: fn.convertir-rem(40);
       }
     }
   }
