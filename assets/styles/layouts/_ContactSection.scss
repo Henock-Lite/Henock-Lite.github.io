@@ -2,6 +2,7 @@
 @use "../../styles/utils/functions" as fn;
 
 .contactmeSection {
+ 
   //   padding: fn.convertir-rem(20);
   padding-bottom: fn.convertir-rem(75);
   .contact-title {
@@ -23,6 +24,9 @@
   .parent-div {
     display: grid;
     grid-template-rows: 25% 25% 25% 25%;
+    a{
+    text-decoration: none;
+    }
 
     cursor: pointer;
     .A {

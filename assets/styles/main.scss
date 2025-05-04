@@ -11,4 +11,8 @@
 @use "./layouts/gallery";
 @use "./layouts/about-me";
 @use"./layouts/card-skills";
+@use"./layouts/project";
+@use"./layouts/card-project";
+@use "./layouts/_quote-section";
+@use "./layouts/about-portfolios";
 @use "./pages/users";

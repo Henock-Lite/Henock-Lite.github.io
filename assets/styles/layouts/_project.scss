@@ -1,3 +1,10 @@
-// .projects{
-    
-// }
+@use "../../styles/utils/functions" as fn;
+.projects {
+  div.project-title {
+    margin: fn.convertir-rem(45) 0 fn.convertir-rem(14);
+    h3 {
+      font-size: fn.convertir-rem(15);
+      font-weight: 300;
+    }
+  }
+}

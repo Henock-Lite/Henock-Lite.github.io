@@ -1,0 +1,19 @@
+@use "../../styles/utils/functions" as fn;
+
+.about-portfolios {
+  .portfolios-title {
+    margin: fn.convertir-rem(45) 0 fn.convertir-rem(14);
+    h4 {
+      font-size: fn.convertir-rem(15);
+      font-weight: 300;
+      text-transform: none;
+    }
+  }
+
+  .liste-site {
+    border: solid fn.convertir-rem(1) #27272a;
+    width: 100%;
+    background: #18181b;
+    border-radius: fn.convertir-rem(14);
+  }
+}

@@ -2,8 +2,9 @@
 @use "../../styles/utils/mixin" as m;
 @use "../../styles/utils/variable" as v;
 
+
 .buildSection {
-  border-top: solid 2px #27272a;
+  border-top: solid fn.convertir-rem(2) #27272a;
   user-select: none;
 
   .title-project {
@@ -45,7 +46,7 @@
 
   .icon-place {
     position: relative;
-    border: solid 1px #27272a;
+    border: solid fn.convertir-rem(1) #27272a;
     height: 70%;
     border-radius: fn.convertir-rem(14);
     background: #18181b;
@@ -54,7 +55,7 @@
 
     .last-project {
       height: 100%;
-      border: solid 0.5px transparent;
+      border: solid fn.convertir-rem(.5) transparent;
       cursor: pointer;
       svg {
         height: fn.convertir-rem(20);
