@@ -43,7 +43,7 @@
     width: 0.25rem;
     inset: 0.65rem auto 0.65rem 0.5rem;
     border-radius: 0.125rem;
-    background: var(--gradient);
+    background: rgba(78, 165, 255, 0.15);
     transition: transform 300ms ease;
     z-index: 4;
   }
@@ -71,10 +71,8 @@
     padding: 0 1.25rem;
     transition: transform 300ms ease;
     z-index: 5;
-    text-transform: capitalize;
     font-size: fn.convertir-rem(13);
     user-select: none;
-    font-style: italic;
     line-height: v.$line-height-base;
     letter-spacing: fn.convertir-rem(0.5);
   }
@@ -91,12 +89,15 @@
     transform: translate(-50%, -50%);
     background: radial-gradient(
       circle closest-side at center,
-      white,
+      rgba(87, 155, 228, 0.815),
       transparent
     );
+    
     opacity: 0;
     transition: opacity 300ms ease;
   }
+
+  
 
   .notiglow {
     z-index: 3;

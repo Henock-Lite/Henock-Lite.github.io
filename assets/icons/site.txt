@@ -4,6 +4,121 @@ https://heroicons.com/outline
 https://hugeicons.com/icons
 https://boxicons.com/  //
 https://tabler.io/icons 
+https://simpleicons.org/?q=word
 
 
 
+🧰 Que mettre dans la section "Uses" de ton portfolio ?
+Voici les catégories que tu peux organiser, avec des exemples selon ton niveau actuel :
+
+💻 1. Ordinateur et setup
+PC/OS : Windows 11 / Linux Ubuntu (si tu switches parfois)
+
+Terminal : Windows Terminal / PowerShell / Bash / Git Bash
+
+Éditeur : Visual Studio Code (avec tes extensions préférées)
+
+Extensions :
+
+Prettier
+
+ESLint
+
+Live Server
+
+PHP Intelephense
+
+GitLens
+
+🧠 2. Technologies que tu maîtrises
+Divise ça par domaine :
+
+Frontend :
+HTML5 / CSS3
+
+JavaScript Vanilla
+
+Bootstrap 5
+
+SCSS
+
+[Tu peux ajouter bientôt :] ReactJS
+
+Backend :
+PHP (pur, POO)
+
+MySQL
+
+JSON
+
+🎨 3. Design / UI
+Figma (si tu fais des maquettes)
+
+Bootstrap Studio (si tu l’utilises)
+
+Coolors (pour les palettes de couleurs)
+
+🛠️ 4. Outils de développement
+Git & GitHub
+
+XAMPP / MAMP (si tu fais du PHP localement)
+
+Postman (pour tester les API plus tard)
+
+Chrome DevTools
+
+🌐 5. Langues
+Français (natif)
+
+Anglais (en apprentissage)
+
+📚 6. Formations / ressources que tu utilises
+Dev.io (formation suivie)
+
+YouTube (grafikart, freecodecamp, etc.)
+
+OpenAI ChatGPT (ton Jarvis préféré 😄)
+
+
+
+
+----------
+### 💻 Setup
+
+- 💻 OS: Windows 11 / Ubuntu (dual boot)
+- 🛠️ Éditeur: VS Code avec Prettier, ESLint, GitLens
+- 🖥️ Terminal: Bash / Git Bash / Windows Terminal
+
+### 🧠 Technologies
+
+**Frontend:**
+- HTML, CSS, JS
+- Bootstrap 5, SCSS
+
+**Backend:**
+- PHP (POO), MySQL
+- JSON API
+
+**Design:**
+- Figma (en cours d’apprentissage)
+- Bootstrap Studio
+
+### ⚙️ Outils
+
+- Git / GitHub
+- XAMPP
+- Chrome DevTools
+- copilot
+- lighthouse
+- proton
+- figmat
+- appinventore
+- wordpress
+
+
+
+### 📚 En apprentissage
+
+- ReactJS, Laravel
+- Tailwind CSS
+- Sécurité Linux et réseau

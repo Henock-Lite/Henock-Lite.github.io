@@ -30,7 +30,7 @@ body {
   font-display: swap;
 }
 body {
-  max-width: min(650px, 100% - 2rem);
+  max-width: min(655px, 100% - 2rem);
   margin-inline: auto;
   margin: 0 auto;
   padding: 3.125rem 0;
@@ -513,71 +513,103 @@ nav ul li {
   font-weight: 300;
 }
 
-.cards-project {
+.project {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   height: 100%;
   width: 100%;
-  gap: 0.9375rem;
+  gap: 0.5rem;
+}
+
+.title {
+  font-size: 0.9375rem;
+  color: #ececef;
+}
+
+.project-card {
+  background-color: #18181b;
+  border-radius: 6px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  width: 100%;
+  height: auto;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(78, 165, 255, 0.1) 0%, rgba(0, 0, 0, 0) 50%);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.card-content {
+  padding: 15px;
+  position: relative;
 }
 
 .date {
-  font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--text-gray);
+  font-size: 0.8rem;
 }
 
-.title {
-  font-size: 1.0625rem;
-  color: #fff;
-}
-
-.grid-card .date,
-.title {
-  margin: 0;
-}
-
-.grid-card {
-  width: 100%;
-  height: 9.375rem;
-  border-radius: 0.625rem;
-  overflow: hidden;
+.link {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: 600;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   position: relative;
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-transition: all 300ms;
-  transition: all 300ms;
-  cursor: pointer;
-}
-.grid-card:hover {
-  -webkit-transform: translateY(-0.125rem);
-          transform: translateY(-0.125rem);
 }
 
-.contents {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
-  position: absolute;
-  height: auto;
-  bottom: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.6)));
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+.tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+  margin: 15px 0;
 }
 
-.img-bg {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.tag {
+  background-color: rgba(78, 165, 255, 0.15);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 500;
 }
 
-.img-bg img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+@media (max-width: 768px) {
+  .project {
+    padding: 40px 20px;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+  }
 }
-
 .quote-section .quote-title {
   margin: 2.8125rem 0 0.875rem;
 }
@@ -620,7 +652,7 @@ nav ul li {
   width: 0.25rem;
   inset: 0.65rem auto 0.65rem 0.5rem;
   border-radius: 0.125rem;
-  background: var(--gradient);
+  background: rgba(78, 165, 255, 0.15);
   -webkit-transition: -webkit-transform 300ms ease;
   transition: -webkit-transform 300ms ease;
   transition: transform 300ms ease;
@@ -655,13 +687,11 @@ nav ul li {
   transition: transform 300ms ease;
   transition: transform 300ms ease, -webkit-transform 300ms ease;
   z-index: 5;
-  text-transform: capitalize;
   font-size: 0.8125rem;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  font-style: italic;
   line-height: 1.5;
   letter-spacing: 0.03125rem;
 }
@@ -676,7 +706,7 @@ nav ul li {
   height: 20rem;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background: radial-gradient(circle closest-side at center, white, transparent);
+  background: radial-gradient(circle closest-side at center, rgba(87, 155, 228, 0.815), transparent);
   opacity: 0;
   -webkit-transition: opacity 300ms ease;
   transition: opacity 300ms ease;
@@ -713,6 +743,9 @@ nav ul li {
   font-size: 1em;
 }
 
+.about-portfolios {
+  padding-bottom: 4.6875rem;
+}
 .about-portfolios .portfolios-title {
   margin: 2.8125rem 0 0.875rem;
 }
@@ -726,4 +759,18 @@ nav ul li {
   width: 100%;
   background: #18181b;
   border-radius: 0.875rem;
+}
+
+.liste-site {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+}
+.liste-site li {
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-bottom: solid 1px #27272a;
+  padding: 0.625rem;
+}
+.liste-site .last-li {
+  border-bottom: none;
 }/*# sourceMappingURL=main.css.map */

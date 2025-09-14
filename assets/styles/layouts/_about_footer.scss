@@ -1,0 +1,15 @@
+@use "../../styles/utils/functions" as fn;
+@use "../../styles/utils/variable" as v;
+
+.liste-site {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  li {
+    align-self: center;
+    border-bottom: solid 1px #27272a;
+    padding: fn.convertir-rem(10);
+  }
+  .last-li{
+    border-bottom: none;
+  }
+}

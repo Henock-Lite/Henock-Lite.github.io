@@ -1,6 +1,7 @@
 @use "../../styles/utils/functions" as fn;
 
 .about-portfolios {
+   padding-bottom: fn.convertir-rem(75);
   .portfolios-title {
     margin: fn.convertir-rem(45) 0 fn.convertir-rem(14);
     h4 {
