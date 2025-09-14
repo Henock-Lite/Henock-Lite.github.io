@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../../styles/utils/functions" as fn;
 @use "../utils/variable" as c;
 
@@ -7,24 +8,24 @@
   grid-template-rows: repeat(2, 1fr);
   height: 100%;
   width: 100%;
-  gap: fn.convertir-rem(8);
+  gap: fn.convertir-rem(12);
 }
 
 .title {
   font-size: fn.convertir-rem(15);
-  color: map-get(c.$couleurs, Bright-Gray);
+  color: map.get(c.$couleurs, Bright-Gray);
 }
 
 .project-card {
-  background-color: map-get(c.$couleurs, card-bg);
-   border-radius: 6px;
+  background-color: map.get(c.$couleurs, card-bg);
+   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
   position: relative;
   border: 1px solid rgba(255, 255, 255, 0.05);
   width: 100%;
-  height: auto;
+  // height: auto;
 }
 
 .project-card::before {

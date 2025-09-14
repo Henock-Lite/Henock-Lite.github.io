@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../../styles/utils/functions" as fn;
 @use "../../styles/utils/mixin" as m;
 @use "../../styles/utils/variable" as v;
@@ -68,8 +69,8 @@
         @include m.flexcenter;
         height: fn.convertir-rem(35);
         width: 8%;
-        border-radius: fn.convertir-rem(8);
-        background: map-get(v.$couleurs, sombre-gris);
+        border-radius: fn.convertir-rem(10);
+        background: map.get(v.$couleurs, sombre-gris);
       }
 
       .description {

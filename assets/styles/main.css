@@ -304,7 +304,7 @@ nav ul li {
           align-items: center;
   height: 2.1875rem;
   width: 8%;
-  border-radius: 0.5rem;
+  border-radius: 0.625rem;
   background: #3f3f46;
 }
 .buildSection .icon-place .last-project .description .num {
@@ -331,7 +331,7 @@ nav ul li {
 .contactmeSection .carte-contact {
   border: solid 1px #27272a;
   height: 70%;
-  border-radius: 0.875rem;
+  border-radius: 0.625rem;
   background: #18181b;
   padding: 0.625rem;
   width: 100%;
@@ -352,7 +352,7 @@ nav ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 0.9375rem;
+  gap: 0.75rem;
   padding: 0.5rem;
 }
 .contactmeSection .parent-div .A .svg-parent svg {
@@ -378,7 +378,7 @@ nav ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0.9375rem;
+  gap: 0.75rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -428,7 +428,7 @@ nav ul li {
   display: grid;
   grid-template-columns: 65% 1fr;
   grid-template-rows: repeat(2, 50%);
-  gap: 0.9375rem;
+  gap: 0.75rem;
   grid-template-areas: "A B" "A C";
 }
 .gallery .areas-grid div {
@@ -462,7 +462,7 @@ nav ul li {
   height: 12.5rem;
   background: #18181b;
   border: solid 1px #27272a;
-  border-radius: 0.875rem;
+  border-radius: 0.625rem;
 }
 .C-skills .skills-flex .parent-svg {
   display: grid;
@@ -506,9 +506,10 @@ nav ul li {
 }
 
 .projects div.project-title {
-  margin: 2.8125rem 0 0.875rem;
+  width: 100%;
 }
 .projects div.project-title h3 {
+  margin: 1.5625rem 1.5625rem;
   font-size: 0.9375rem;
   font-weight: 300;
 }
@@ -519,7 +520,7 @@ nav ul li {
   grid-template-rows: repeat(2, 1fr);
   height: 100%;
   width: 100%;
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
 
 .title {
@@ -529,7 +530,7 @@ nav ul li {
 
 .project-card {
   background-color: #18181b;
-  border-radius: 6px;
+  border-radius: 10px;
   overflow: hidden;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -538,7 +539,6 @@ nav ul li {
   position: relative;
   border: 1px solid rgba(255, 255, 255, 0.05);
   width: 100%;
-  height: auto;
 }
 
 .project-card::before {
@@ -631,7 +631,7 @@ nav ul li {
   width: 100%;
   height: 8rem;
   background: #29292c;
-  border-radius: 0.875rem;
+  border-radius: 0.625rem;
   cursor: pointer;
   overflow: hidden;
   font-size: 14px;
@@ -642,7 +642,7 @@ nav ul li {
   position: absolute;
   content: "";
   inset: 0.0625rem;
-  border-radius: 0.9375rem;
+  border-radius: 0.6375rem;
   background: #18181b;
   z-index: 2;
 }
@@ -758,7 +758,7 @@ nav ul li {
   border: solid 0.0625rem #27272a;
   width: 100%;
   background: #18181b;
-  border-radius: 0.875rem;
+  border-radius: 0.625rem;
 }
 
 .liste-site {

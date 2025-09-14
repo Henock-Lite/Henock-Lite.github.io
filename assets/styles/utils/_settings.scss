@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../../base/typographie";
 @use "../../styles/utils/variable" as v;
 @use "../../styles/utils/functions" as fn;
@@ -10,7 +11,7 @@ body {
   height: 100%;
   line-height: v.$line-height-base;
   font-family: "Lexend", sans-serif;
-  background: map-get(v.$couleurs, primaire);
+  background: map.get(v.$couleurs, primaire);
   color: #ececef;
   font-weight: 300;
   overflow-x: visible;
